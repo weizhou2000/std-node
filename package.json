@@ -7,9 +7,10 @@
     "start": "NODE_ENV=production node ./lib/index.js",
     "start-dev": "NODE_ENV=dev nodemon --exec babel-node ./src/index.js",
     "start-stage": "NODE_ENV=stage nodemon --exec babel-node ./src/index.js",
-    "start1": "nodemon --exec babel-node ./src/t1.js",
+    "start1": "nodemon --exec babel-node ./src/examples/class.js",
     "build": "node_modules/babel-cli/bin/babel.js src --out-dir lib",
-    "hint": "eslint src"
+    "hint": "eslint src",
+    "push": "git add . && git commit -m'mod' &&  git push origin master"
   },
   "repository": {
     "type": "git",
